@@ -9,12 +9,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='absolute flex gap-10 right-0 m-8'>
-        <button className='text-white' onClick={() => setContactActive(!contactActive)}>Get Started</button>
-        <Link className=' bg-orange-600 rounded-xl text-white p-3' to='/inner-nav'>Menu</Link>
+      <nav className='absolute right-0 flex gap-10 m-8'>
+        <button className='' onClick={() => setContactActive(!contactActive)}>
+          Get Started
+        </button>
+        <Link
+          className='p-3 text-white bg-orange-600  rounded-xl'
+          to='/inner-nav'
+        >
+          Menu
+        </Link>
       </nav>
-      { contactActive && <ContactForm/> }
-      
+      {contactActive && <ContactForm />}
     </>
   )
 }

@@ -40,11 +40,11 @@ const ReactVideoScroll = () => {
   // }, [])
 
   return (
-    <div className='relative h-[500vh]' ref={scrollSectionRef}>
+    <div className='relative' ref={scrollSectionRef}>
       <video
         ref={videoRef}
         id='v0'
-        className='sticky mt-[100px] ml-[100px] top-[20%] left-0 w-[100%] h-[60vh]'
+        // className='sticky mt-[100px] ml-[100px] top-[20%] left-0 w-[100%] h-[60vh]'
         preload='preload'
       >
         <source type='video/mp4' src={Infinity}></source>
